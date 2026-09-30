@@ -20,3 +20,21 @@ let log_size = log.len() as f64;
     // RETURN total / log size[cite: 3]
     total / log_size
 }
+
+fn hottest_day(log: &Vec<i32>) -> usize {
+    if log.is_empty() {
+        return 0; // RETURN 0 if log size check fails[cite: 5]
+    }
+
+    let mut highest = log[0] as f64; // highest: FLOAT = log at 0[cite: 5]
+    let mut index: usize = 0;       // index: USIZE = 0[cite: 5]
+
+    for (i, &entry) in log.iter().enumerate() {
+        if highest < entry as f64 { // highest < entry?[cite: 5]
+            highest = entry as f64; // highest = entry[cite: 5]
+            index = i;              // index = i[cite: 5]
+        }
+    }
+
+    index // RETURN index[cite: 5]
+}
