@@ -1,0 +1,10 @@
+
+DAYS	Leave as is	it is already a collection holding one kind of data
+
+highs	Leave as is	it is already a collection holding one kind of data
+
+DAYS[i] paired with highs[i]	Convert to a struct or collection	it is multiple values paired together
+
+the value returned by hottest_day	Leave as is	it is a single value
+
+the threshold 75	Leave as is	it is a single value 

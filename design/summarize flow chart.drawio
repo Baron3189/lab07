@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="rK1pKyNeyQLaMGMwIPmo">
+    <mxGraphModel dx="772" dy="1090" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="3TDXHULTxht9yDkHtp5W-1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Summarize" vertex="1">
+          <mxGeometry height="70" width="270" x="220" y="80" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-2" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="354.5" y="150" as="sourcePoint" />
+            <mxPoint x="354.5" y="250" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-3" parent="1" style="rhombus;whiteSpace=wrap;html=1;shapeInside=1;" value="&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;log empty?&lt;/div&gt;" vertex="1">
+          <mxGeometry height="110" width="150" x="280" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-4" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="425" y="304.5" as="sourcePoint" />
+            <mxPoint x="545" y="304.5" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Return defaults" vertex="1">
+          <mxGeometry height="60" width="200" x="550" y="275" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-6" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" target="3TDXHULTxht9yDkHtp5W-8" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="354.5" y="360" as="sourcePoint" />
+            <mxPoint x="354.5" y="460" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-8" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Compute average" vertex="1">
+          <mxGeometry height="50" width="260" x="225" y="410" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-9" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="354.5" y="470" as="sourcePoint" />
+            <mxPoint x="354.5" y="530" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-10" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Find hottest day" vertex="1">
+          <mxGeometry height="60" width="190" x="260" y="530" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-11" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="354.5" y="590" as="sourcePoint" />
+            <mxPoint x="354.5" y="660" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-12" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Count days above" vertex="1">
+          <mxGeometry height="60" width="220" x="250" y="660" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-13" edge="1" parent="1" style="endArrow=classic;html=1;rounded=0;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="354.5" y="720" as="sourcePoint" />
+            <mxPoint x="354.5" y="790" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-14" parent="1" style="rounded=1;whiteSpace=wrap;html=1;roundedPerimeter=1;" value="Return Summary" vertex="1">
+          <mxGeometry height="60" width="200" x="250" y="790" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-15" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="yes" vertex="1">
+          <mxGeometry height="30" width="60" x="450" y="250" as="geometry" />
+        </mxCell>
+        <mxCell id="3TDXHULTxht9yDkHtp5W-16" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="no" vertex="1">
+          <mxGeometry height="30" width="60" x="380" y="360" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

@@ -1,0 +1,10 @@
+struct Reading {
+    day: String,
+    temp: f64,
+}
+
+struct Summary {
+    average: f64,
+    hottest_day: String,
+    days_above_threshold: usize,
+}
