@@ -22,9 +22,9 @@ fn main() {
         });
     }
 
-    println!("Average high: {:.1}", average_temp(&highs));
-    println!("Hottest day: {}", DAYS[hottest_day(&highs)]);
-    println!("Days above 75: {}", count_above(&highs, 75));
+    println!("Average high: {:.1}", average_temp(&log));
+    println!("Hottest day: {}", log[hottest_day(&log)].day);
+    println!("Days above 75: {}", count_above(&log, 75));
 }
 
 fn average_temp(log: &Vec<i32>) -> f64 {
