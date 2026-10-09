@@ -11,6 +11,13 @@ struct Summary {
     days_above: usize,
 }
 
+fn summarize(log: &Vec<Reading>, threshold: i32) -> Summary {
+    Summary {
+        average: average_temp(log),
+        hottest_day: log[hottest_day(log)].day.clone(),
+        days_above: count_above(log, threshold) as usize,
+    }
+}
 
 fn main() {
     let mut log: Vec<Reading> = Vec::new();
@@ -26,9 +33,12 @@ fn main() {
     println!("{}: {}", entry.day, entry.high);
 }
 
-    println!("Average high: {:.1}", average_temp(&log));
-    println!("Hottest day: {}", log[hottest_day(&log)].day);
-    println!("Days above 75: {}", count_above(&log, 75));
+let summary = summarize(&log, 75);
+
+    println!("Average high: {:.1}", summary.average);
+    println!("Hottest day: {}", summary.hottest_day);
+    println!("Days above 75: {}", summary.days_above);
+
 }
 
 fn average_temp(log: &Vec<Reading>) -> f64 {
