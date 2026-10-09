@@ -1,8 +1,26 @@
 const DAYS: [&str; 7] = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
 
-fn main() {
-    let highs: Vec<i32> = vec![72, 68, 75, 81, 79];
+struct Reading {
+    day: String,
+    high: i32,
+}
 
+struct Summary {
+    average: f64,
+    hottest_day: String,
+    days_above: usize,
+}
+
+
+fn main() {
+    let mut log: Vec<Reading> = Vec::new();
+
+    for (day, &high) in DAYS.iter().zip([72, 68, 75, 81, 79, 83, 76].iter()) {
+        log.push(Reading {
+            day: day.to_string(),
+            high,
+        });
+    }
 
     println!("Average high: {:.1}", average_temp(&highs));
     println!("Hottest day: {}", DAYS[hottest_day(&highs)]);
@@ -56,14 +74,5 @@ fn count_above(log: &[i32], threshold: i32) -> i32 {
     count 
 }
 
-fn count_above(log: &[i32], threshold: i32) -> i32 {
-    let mut count = 0; // count: INTEGER
 
-    for &entry in log { // for entry in log
-        if entry > threshold { // entry > threshold -> TRUE
-            count += 1; // count = count + 1
-        }
-    }
 
-    count // RETURN count
-}
