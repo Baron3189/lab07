@@ -22,6 +22,10 @@ fn main() {
         });
     }
 
+    for entry in &log {
+    println!("{}: {}", entry.day, entry.high);
+}
+
     println!("Average high: {:.1}", average_temp(&log));
     println!("Hottest day: {}", log[hottest_day(&log)].day);
     println!("Days above 75: {}", count_above(&log, 75));
