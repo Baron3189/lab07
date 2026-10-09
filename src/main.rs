@@ -27,7 +27,7 @@ fn main() {
     println!("Days above 75: {}", count_above(&log, 75));
 }
 
-fn average_temp(log: &Vec<i32>) -> f64 {
+fn average_temp(log: &Vec<Reading>) -> f64 {
    
    if log.is_empty() {
       return 0.0; 
@@ -36,25 +36,25 @@ let log_size = log.len() as f64;
     let mut total: f64 = 0.0; 
 
     
-    for &entry in log {
-        total = total + entry as f64; 
+    for entry in log {
+        total = total + entry.high as f64; 
     }
 
    
     total / log_size
 }
 
-fn hottest_day(log: &Vec<i32>) -> usize {
+fn hottest_day(log: &Vec<Reading>) -> usize {
     if log.is_empty() {
         return 0; 
     }
 
-    let mut highest = log[0] as f64; 
-    let mut index: usize = 0;       
+    let mut highest = log[0].high as f64; 
+    let mut index = 0;       
 
-    for (i, &entry) in log.iter().enumerate() {
-        if highest < entry as f64 { 
-            highest = entry as f64; 
+    for (i, entry) in log.iter().enumerate() {
+        if highest < entry.high as f64 { 
+            highest = entry.high as f64; 
             index = i;             
         }
     }
@@ -62,11 +62,11 @@ fn hottest_day(log: &Vec<i32>) -> usize {
     index 
 }
 
-fn count_above(log: &[i32], threshold: i32) -> i32 {
+fn count_above(log: &Vec<Reading>, threshold: i32) -> i32 {
     let mut count = 0; 
 
-    for &entry in log {
-        if entry > threshold {
+    for entry in log {
+        if entry.high > threshold {
             count += 1;
         }
     }
