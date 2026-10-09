@@ -55,3 +55,15 @@ fn count_above(log: &[i32], threshold: i32) -> i32 {
 
     count 
 }
+
+fn count_above(log: &[i32], threshold: i32) -> i32 {
+    let mut count = 0; // count: INTEGER
+
+    for &entry in log { // for entry in log
+        if entry > threshold { // entry > threshold -> TRUE
+            count += 1; // count = count + 1
+        }
+    }
+
+    count // RETURN count
+}
